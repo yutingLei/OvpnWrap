@@ -4,15 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>OvpnWrap copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>OvpnWrap.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>OvpnWrapTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>84F8901E1F283E4900330D36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84F8904F1F2877C100330D36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84F890781F288FB900330D36</key>
 		<dict>
 			<key>primary</key>
 			<true/>

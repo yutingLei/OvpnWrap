@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+set -e
+if [ -z "$OVPN_PATH" ]; then
+    echo OVPN_PATH var must point to your project dir ; exit 1
+fi
+if [ -z "$TARGET" ]; then
+    echo TARGET var must be defined ; exit 1
+fi
+
+. $OVPN_PATH/scripts/vars-${TARGET}
+. $OVPN_PATH/scripts/lib-versions
+
+CC=cc
+LD=ld
+AR=ar
+RANLIB=ranlib
+[ "$GCC_CMD" ] && CC=$GCC_CMD
+[ "$LD_CMD" ] && LD=$LD_CMD
+[ "$AR_CMD" ] && AR=$AR_CMD
+[ "$RANLIB_CMD" ] && RANLIB=$RANLIB_CMD
+
+DIST=$OVPN_PATH/libs/lz4/lz4-$PLATFORM
+rm -rf $DIST
+mkdir -p $DIST/include
+mkdir $DIST/lib
+cd $OVPN_PATH/deps/lz4/lib
+CMD="$CC $PLATFORM_FLAGS $OTHER_COMPILER_FLAGS $LIB_OPT_LEVEL $LIB_FPIC -c lz4.c"
+echo $CMD
+$CMD
+$AR rc $DIST/lib/liblz4.a lz4.o
+$RANLIB $DIST/lib/liblz4.a
+cp lz4.h $DIST/include/
+exit 0

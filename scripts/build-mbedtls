@@ -1,0 +1,46 @@
+#!/bin/bash
+
+set -e
+if [ -z "OVPN_PATH" ]; then
+    echo OVPN_PATH var must point to your project dir ; exit 1
+fi
+
+if [ -z "$TARGET" ]; then
+    TARGET var must be defined
+fi
+
+. $OVPN_PATH/scripts/vars-${TARGET}
+. $OVPN_PATH/scripts/lib-versions
+
+DIST=$OVPN_PATH/libs/mbedtls/mbedtls-$PLATFORM
+rm -rf $DIST
+mkdir -p $DIST
+
+CC=cc
+LD=ld
+AR=ar
+RANLIB=ranlib
+[ "$GCC_CMD" ] && CC=$GCC_CMD
+[ "$LD_CMD" ] && LD=$LD_CMD
+[ "$AR_CMD" ] && AR=$AR_CMD
+[ "$RANLIB_CMD" ] && RANLIB=$RANLIB_CMD
+
+SRC=$OVPN_PATH/deps/mbedtls
+cd $OVPN_PATH/deps/mbedtls/library
+rm -f *.o
+for c in *.c ; do
+    CMD="$CC -I../include $PLATFORM_FLAGS $OTHER_COMPILER_FLAGS $LIB_OPT_LEVEL $LIB_FPIC -c $c"
+    echo $CMD
+    $CMD
+done
+
+cd $DIST
+mkdir library
+$AR rc library/libmbedtls.a $SRC/library/*.o
+$RANLIB library/libmbedtls.a 2>&1 | grep -v "has no symbols" || true
+
+mkdir -p include/mbedtls
+cp $SRC/include/mbedtls/*.h include/mbedtls/
+exit 0
+
+

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Yt-L. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for OvpnWrap.
 FOUNDATION_EXPORT double OvpnWrapVersionNumber;
@@ -15,5 +15,4 @@ FOUNDATION_EXPORT double OvpnWrapVersionNumber;
 FOUNDATION_EXPORT const unsigned char OvpnWrapVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <OvpnWrap/PublicHeader.h>
-
-
+#import "OvpnAPI.h"

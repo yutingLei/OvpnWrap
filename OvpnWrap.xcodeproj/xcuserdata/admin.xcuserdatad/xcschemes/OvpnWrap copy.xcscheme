@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84F8901E1F283E4900330D36"
-               BuildableName = "OvpnWrap.framework"
-               BlueprintName = "OvpnWrap"
+               BlueprintIdentifier = "84F8904F1F2877C100330D36"
+               BuildableName = "OvpnWrap copy.framework"
+               BlueprintName = "OvpnWrap copy"
                ReferencedContainer = "container:OvpnWrap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84F8901E1F283E4900330D36"
-            BuildableName = "OvpnWrap.framework"
-            BlueprintName = "OvpnWrap"
+            BlueprintIdentifier = "84F8904F1F2877C100330D36"
+            BuildableName = "OvpnWrap copy.framework"
+            BlueprintName = "OvpnWrap copy"
             ReferencedContainer = "container:OvpnWrap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84F8901E1F283E4900330D36"
-            BuildableName = "OvpnWrap.framework"
-            BlueprintName = "OvpnWrap"
+            BlueprintIdentifier = "84F8904F1F2877C100330D36"
+            BuildableName = "OvpnWrap copy.framework"
+            BlueprintName = "OvpnWrap copy"
             ReferencedContainer = "container:OvpnWrap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

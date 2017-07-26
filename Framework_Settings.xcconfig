@@ -1,0 +1,23 @@
+//
+//  Framework_Settings.xcconfig
+//  ovpn-wrap
+//
+//  Created by admin on 7/25/17.
+//  Copyright © 2017 Yt-L. All rights reserved.
+//
+
+//! product name
+PRODUCT_NAME = OvpnWrap
+
+//! clang (gnu++14 libc++)
+CLANG_CXX_LANGUAGE_STANDARD = gnu++14
+CLANG_CXX_LIBRARY = libc++
+
+HEADER_SEARCH_PATHS[sdk=iphoneos*] = "$(PROJECT_DIR)/libs/lz4/lz4-ios/include" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-ios/include" "$(PROJECT_DIR)/libs/asio/asio/include" "$(PROJECT_DIR)/libs/openvpn3"
+HEADER_SEARCH_PATHS[sdk=macosx*] = "$(PROJECT_DIR)/libs/lz4/lz4-ios/include" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-ios/include" "$(PROJECT_DIR)/libs/asio/asio/include" "$(PROJECT_DIR)/libs/openvpn3"
+LIBRARY_SEARCH_PATHS[sdk=iphoneos*] = "$(PROJECT_DIR)/libs/lz4/lz4-ios/lib" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-ios/library"
+LIBRARY_SEARCH_PATHS[sdk=macosx*] = "$(PROJECT_DIR)/libs/lz4/lz4-osx/lib" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-osx/library"
+
+OTHER_LDFLAGS = -lmbedtls -llz4
+OTHER_CPLUSPLUSFLAGS = $(OTHER_CFLAGS) -DUSE_ASIO -DASIO_STANDALONE -DASIO_NO_DEPRECATED -DHAVE_LZ4 -DUSE_MBEDTLS -DOPENVPN_FORCE_TUN_NULL -DUSE_TUN_BUILDER
+GCC_WARN_64_TO_32_BIT_CONVERSION = NO

@@ -1,0 +1,12 @@
+[submodule "deps/lz4"]
+	path = deps/lz4
+	url = https://github.com/lz4/lz4.git
+[submodule "deps/asio"]
+	path = deps/asio
+	url = https://github.com/chriskohlhoff/asio.git
+[submodule "deps/openvpn3"]
+	path = deps/openvpn3
+	url = https://github.com/OpenVPN/openvpn3.git
+[submodule "deps/mbedtls"]
+	path = deps/mbedtls
+	url = https://github.com/ARMmbed/mbedtls.git

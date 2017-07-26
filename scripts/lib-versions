@@ -1,0 +1,4 @@
+export ASIO_VERSION=asio-master
+export LZ4_VERSION=lz4-dev
+export MBEDTLS_VERSION=mbedtls-2.5.1
+export OPENSSL_VERSION=openssl-1.0.2h

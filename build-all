@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+set -e
+if [ -z "$OVPN_PATH" ]; then
+    echo OVPN_PATH var must point to project tree ; exit 1
+fi
+
+# reset vars
+. $OVPN_PATH/scripts/vars-reset
+
+cd $OVPN_PATH/libs
+
+# remove files
+rm -rf lz4* mbedtls* asio* openvpn3*
+mkdir lz4
+mkdir mbedtls
+mkdir asio
+
+#build for asio
+echo "******* ASIO"
+cp -a $OVPN_PATH/deps/asio $OVPN_PATH/libs/
+
+#build for openvpn3
+echo "******* OPENVPN3"
+cp -a $OVPN_PATH/deps/openvpn3 $OVPN_PATH/libs/
+
+#build for lz4
+echo "******* LZ4"
+for target in ios osx ; do
+    echo '***************' TARGET $target
+    TARGET=$target $OVPN_PATH/scripts/build-lz4
+done
+
+#build for mbedtls
+echo "******* MBEDTLS ios"
+## ios
+target=ios
+VERBOSE=1 TARGET=$target USE_MINICRYPTO=0 $OVPN_PATH/scripts/build-mbedtls
+
+## osx
+echo "******* MBEDTLS ios"
+[ -z "OSX_MINICRYPTO" ] && OSX_MINICRYPTO=0
+[ -z "OSX_SERVER" ] && OSX_SERVER=1
+target=osx
+VERBOSE=1 TARGET=$target USE_MINICRYPTO=$OSX_MINICRYPTO MINICRYPTO_NO_AES=1 ENABLE_SERVER=$OSX_SERVER $OVPN_PATH/scripts/build-mbedtls
+
+echo "******* Succeed!"
