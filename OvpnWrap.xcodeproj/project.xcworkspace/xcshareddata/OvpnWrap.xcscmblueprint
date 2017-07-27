@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "05E72137EFEB00C84146611D60998BA8CB3EE647",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "05E72137EFEB00C84146611D60998BA8CB3EE647" : 9223372036854775807,
+    "AF9DEF757147219C7611F13C20FCE6116AD55A8A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E2B2182B-12CE-435A-9E99-7C6A1C1304D3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "05E72137EFEB00C84146611D60998BA8CB3EE647" : "OvpnWrap\/",
+    "AF9DEF757147219C7611F13C20FCE6116AD55A8A" : "OvpnWrap\/libs\/openvpn3\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OvpnWrap",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OvpnWrap.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yutingLei\/OvpnWrap.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "05E72137EFEB00C84146611D60998BA8CB3EE647"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OpenVPN\/openvpn3.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF9DEF757147219C7611F13C20FCE6116AD55A8A"
+    }
+  ]
+}
