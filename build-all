@@ -7,10 +7,16 @@ fi
 # reset vars
 . $OVPN_PATH/scripts/vars-reset
 
+# create libs file
+LIB_PATH="$OVPN_PATH/libs"
+if [ ! -z "$LIB_PATH" ]; then
+	rm -rf $LIB_PATH
+fi
+mkdir -p $OVPN_PATH/libs
 cd $OVPN_PATH/libs
 
 # remove files
-rm -rf lz4* mbedtls* asio* openvpn3*
+# rm -rf lz4* mbedtls* asio* openvpn3*
 mkdir lz4
 mkdir mbedtls
 mkdir asio
