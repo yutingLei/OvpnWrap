@@ -8,9 +8,12 @@
   
 **2.开发库文件**
 
-  1.将工程clone到你的工程目录下  
-  2.将子模块clone下来，命令是 git submodule update --init --recursive  
-  3.打开终端,cd 到你clone的目录下  
-  4.输入 $OVPN_PATH=`pwd`
-  5.执行build-all文件，命令是 . build-all
+  1.将工程clone到你的工程目录下  
   
+  2.将子模块clone下来，命令是 git submodule update --init --recursive  
+  
+  3.打开终端,cd 到你clone的目录下  
+  
+  4.输入 $OVPN_PATH=`pwd`  
+  
+  5.执行build-all文件，命令是 . build-all. 
