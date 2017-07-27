@@ -14,7 +14,7 @@ CLANG_CXX_LANGUAGE_STANDARD = gnu++14
 CLANG_CXX_LIBRARY = libc++
 
 HEADER_SEARCH_PATHS[sdk=iphoneos*] = "$(PROJECT_DIR)/libs/lz4/lz4-ios/include" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-ios/include" "$(PROJECT_DIR)/libs/asio/asio/include" "$(PROJECT_DIR)/libs/openvpn3"
-HEADER_SEARCH_PATHS[sdk=macosx*] = "$(PROJECT_DIR)/libs/lz4/lz4-ios/include" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-ios/include" "$(PROJECT_DIR)/libs/asio/asio/include" "$(PROJECT_DIR)/libs/openvpn3"
+HEADER_SEARCH_PATHS[sdk=macosx*] = "$(PROJECT_DIR)/libs/lz4/lz4-osx/include" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-osx/include" "$(PROJECT_DIR)/libs/asio/asio/include" "$(PROJECT_DIR)/libs/openvpn3"
 LIBRARY_SEARCH_PATHS[sdk=iphoneos*] = "$(PROJECT_DIR)/libs/lz4/lz4-ios/lib" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-ios/library"
 LIBRARY_SEARCH_PATHS[sdk=macosx*] = "$(PROJECT_DIR)/libs/lz4/lz4-osx/lib" "$(PROJECT_DIR)/libs/mbedtls/mbedtls-osx/library"
 
