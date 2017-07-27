@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84F890241F283E4900330D36 /* OvpnWrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F890221F283E4900330D36 /* OvpnWrap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84F890361F283F4100330D36 /* Ovpn+Settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F8902B1F283F4100330D36 /* Ovpn+Settings.h */; };
 		84F890371F283F4100330D36 /* Ovpn+Settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F8902C1F283F4100330D36 /* Ovpn+Settings.mm */; };
 		84F890381F283F4100330D36 /* OvpnAPI_Builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F8902D1F283F4100330D36 /* OvpnAPI_Builder.h */; };
@@ -25,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		84F8901F1F283E4900330D36 /* OvpnWrap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OvpnWrap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F890221F283E4900330D36 /* OvpnWrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OvpnWrap.h; sourceTree = "<group>"; };
 		84F890231F283E4900330D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F8902A1F283F0100330D36 /* Framework_Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework_Settings.xcconfig; sourceTree = "<group>"; };
 		84F8902B1F283F4100330D36 /* Ovpn+Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ovpn+Settings.h"; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				84F890431F283F6C00330D36 /* API */,
 				84F890421F283F5A00330D36 /* Tun */,
 				84F890411F283F4700330D36 /* Ovpn */,
-				84F890221F283E4900330D36 /* OvpnWrap.h */,
 				84F890231F283E4900330D36 /* Info.plist */,
 			);
 			path = OvpnWrap;
@@ -140,7 +137,6 @@
 				84F890381F283F4100330D36 /* OvpnAPI_Builder.h in Headers */,
 				84F890361F283F4100330D36 /* Ovpn+Settings.h in Headers */,
 				84F8903D1F283F4100330D36 /* OvpnClient.h in Headers */,
-				84F890241F283E4900330D36 /* OvpnWrap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
