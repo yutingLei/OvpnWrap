@@ -19,21 +19,9 @@
 		84F890401F283F4100330D36 /* Profile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F890351F283F4100330D36 /* Profile.mm */; };
 		84F890461F2842C100330D36 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F890451F2842C100330D36 /* NetworkExtension.framework */; };
 		84F8904E1F28777400330D36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F8904D1F28777400330D36 /* SystemConfiguration.framework */; };
-		84F8907C1F288FB900330D36 /* OvpnWrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8907B1F288FB900330D36 /* OvpnWrapTests.swift */; };
-		84F8907E1F288FB900330D36 /* OvpnWrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F8901F1F283E4900330D36 /* OvpnWrap.framework */; };
 		84F890DB1F28AA5E00330D36 /* ovpncli.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F890D91F28AA5E00330D36 /* ovpncli.cpp */; };
 		84F890DC1F28AA5E00330D36 /* ovpncli.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 84F890DA1F28AA5E00330D36 /* ovpncli.hpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		84F8907F1F288FB900330D36 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84F890161F283E4900330D36 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84F8901E1F283E4900330D36;
-			remoteInfo = OvpnWrap;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		84F8901F1F283E4900330D36 /* OvpnWrap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OvpnWrap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,9 +39,6 @@
 		84F890351F283F4100330D36 /* Profile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Profile.mm; sourceTree = "<group>"; };
 		84F890451F2842C100330D36 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		84F8904D1F28777400330D36 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		84F890791F288FB900330D36 /* OvpnWrapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvpnWrapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F8907B1F288FB900330D36 /* OvpnWrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvpnWrapTests.swift; sourceTree = "<group>"; };
-		84F8907D1F288FB900330D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F890D91F28AA5E00330D36 /* ovpncli.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ovpncli.cpp; path = libs/openvpn3/client/ovpncli.cpp; sourceTree = SOURCE_ROOT; };
 		84F890DA1F28AA5E00330D36 /* ovpncli.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ovpncli.hpp; path = libs/openvpn3/client/ovpncli.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -68,14 +53,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84F890761F288FB900330D36 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84F8907E1F288FB900330D36 /* OvpnWrap.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +61,6 @@
 			children = (
 				84F8902A1F283F0100330D36 /* Framework_Settings.xcconfig */,
 				84F890211F283E4900330D36 /* OvpnWrap */,
-				84F8907A1F288FB900330D36 /* OvpnWrapTests */,
 				84F890201F283E4900330D36 /* Products */,
 				84F890441F2842C100330D36 /* Frameworks */,
 			);
@@ -94,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				84F8901F1F283E4900330D36 /* OvpnWrap.framework */,
-				84F890791F288FB900330D36 /* OvpnWrapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,15 +127,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		84F8907A1F288FB900330D36 /* OvpnWrapTests */ = {
-			isa = PBXGroup;
-			children = (
-				84F8907B1F288FB900330D36 /* OvpnWrapTests.swift */,
-				84F8907D1F288FB900330D36 /* Info.plist */,
-			);
-			path = OvpnWrapTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -199,24 +165,6 @@
 			productReference = 84F8901F1F283E4900330D36 /* OvpnWrap.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		84F890781F288FB900330D36 /* OvpnWrapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84F890811F288FB900330D36 /* Build configuration list for PBXNativeTarget "OvpnWrapTests" */;
-			buildPhases = (
-				84F890751F288FB900330D36 /* Sources */,
-				84F890761F288FB900330D36 /* Frameworks */,
-				84F890771F288FB900330D36 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84F890801F288FB900330D36 /* PBXTargetDependency */,
-			);
-			name = OvpnWrapTests;
-			productName = OvpnWrapTests;
-			productReference = 84F890791F288FB900330D36 /* OvpnWrapTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,10 +178,6 @@
 					84F8901E1F283E4900330D36 = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
-					};
-					84F890781F288FB900330D36 = {
-						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -251,20 +195,12 @@
 			projectRoot = "";
 			targets = (
 				84F8901E1F283E4900330D36 /* OvpnWrap */,
-				84F890781F288FB900330D36 /* OvpnWrapTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		84F8901D1F283E4900330D36 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84F890771F288FB900330D36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,23 +222,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84F890751F288FB900330D36 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84F8907C1F288FB900330D36 /* OvpnWrapTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		84F890801F288FB900330D36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84F8901E1F283E4900330D36 /* OvpnWrap */;
-			targetProxy = 84F8907F1F288FB900330D36 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		84F890251F283E4900330D36 /* Debug */ = {
@@ -455,30 +375,6 @@
 			};
 			name = Release;
 		};
-		84F890821F288FB900330D36 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = OvpnWrapTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gucklood.OvpnWrapTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		84F890831F288FB900330D36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = OvpnWrapTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gucklood.OvpnWrapTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -498,14 +394,7 @@
 				84F890291F283E4900330D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		84F890811F288FB900330D36 /* Build configuration list for PBXNativeTarget "OvpnWrapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84F890821F288FB900330D36 /* Debug */,
-				84F890831F288FB900330D36 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
